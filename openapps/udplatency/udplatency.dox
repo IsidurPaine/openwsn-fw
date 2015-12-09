@@ -1,0 +1,11 @@
+/**
+\defgroup UDP Latency case study
+
+\brief Stai scrivendo questa applicazione per poter inviare su socket UDP l'ASN e valutare la latenza.
+
+\brief I pacchetti sono organizzati in solt da 12 byte, i primi dei quali sono l'ASN vero, i secondi due sono l'ID e gli altri sono tutti a 255.
+
+\brief Lo scopo di questa applicazione sarà inviare dati che poi, alla ricezione, verranno elaborati per calcolare il ritardo nella ricezione del pacchetto.
+
+\author Pietro Boccadoro <pieroboccadoro13@gmail.com>, December 2015.
+*/
