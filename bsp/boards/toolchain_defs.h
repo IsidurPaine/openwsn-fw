@@ -18,11 +18,11 @@
 #if defined(__GNUC__) && (__GNUC__==4)  && (__GNUC_MINOR__<=5) && defined(__MSP430__)
    // mspgcc <4.5.x
    #include <signal.h>
-   #define              ISR(v) interrupt (v ## _VECTOR) v ## _ISR(void)
+   #define              ISR2(v) interrupt (v ## _VECTOR) v ## _ISR2(void)
 #else
    // other
    #define              __PRAGMA__(x) _Pragma(#x)
-   #define              ISR(v) __PRAGMA__(vector=v ##_VECTOR) __interrupt void v ##_ISR(void)
+   #define              ISR2(v) __PRAGMA__(vector=v ##_VECTOR) __interrupt void v ##_ISR2(void)
 #endif
 
 //===== inline
